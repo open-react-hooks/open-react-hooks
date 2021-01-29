@@ -1,0 +1,36 @@
+{
+  "name": "@open-react-hooks/use-debounce",
+  "version": "0.0.1",
+  "description": "> TODO: description",
+  "author": "Jorge Calleja - wootsbot <jlca@parrotsoftware.io>",
+  "homepage": "https://github.com/wootsbot/open-react-hooks#readme",
+  "license": "ISC",
+  "sideEffects": false,
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "exports": {
+    ".": {
+      "require": "./build/index.js",
+      "default": "./build/index.esm.js"
+    }
+  },
+  "files": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wootsbot/open-react-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wootsbot/open-react-hooks/issues"
+  },
+  "scripts": {
+    "build": "yarn clean:build && yarn build:cjs",
+    "build:cjs": "cross-env BABEL_ENV=cjs rollup --config ../../rollup.config.js",
+    "clean:build": "rimraf -rf build",
+    "prettier": "prettier --config ../../.prettierrc \"./**/*.+(js|json|jsx)\" --write"
+  },
+  "peerDependencies": {
+    "react": "17.x"
+  }
+}

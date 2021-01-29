@@ -1,0 +1,61 @@
+{
+  "name": "open-react-hooks",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "examples/*"
+    ]
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "use-debounce": "yarn workspace @open-react-hooks/use-debounce"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.12.1",
+    "@babel/plugin-proposal-export-default-from": "^7.12.1",
+    "@babel/plugin-proposal-export-namespace-from": "^7.12.1",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@babel/plugin-transform-object-assign": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/runtime": "^7.12.5",
+    "@rollup/plugin-babel": "^5.2.3",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1",
+    "@rollup/plugin-replace": "^2.3.4",
+    "@testing-library/dom": "^7.29.4",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/react-hooks": "^5.0.3",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-macros": "^3.0.1",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "cross-env": "^7.0.3",
+    "husky": "^4.3.8",
+    "jest-cli": "^26.6.3",
+    "jest-dom": "^4.0.0",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.38.1",
+    "rollup-plugin-size-snapshot": "^0.12.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "resolutions": {
+    "**/react": "17.0.1",
+    "**/react-dom": "17.0.1"
+  }
+}
