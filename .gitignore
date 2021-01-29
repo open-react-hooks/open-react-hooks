@@ -1,0 +1,11 @@
+dist
+node_modules
+coverage
+.next
+build
+.cache
+
+# Cruft
+.DS_Store
+npm-debug.log
+yarn-error.log
