@@ -1,6 +1,6 @@
 {
   "name": "@open-react-hooks/use-debounce",
-  "version": "0.0.3-alpha.5",
+  "version": "0.0.3-alpha.6",
   "description": "> Creates a debounced function that delays invoking func until after wait milliseconds have elapsed since the last time the debounced function was invoked.",
   "author": "Jorge Calleja - wootsbot <jorge.calleja@wootsbot.dev>",
   "homepage": "https://github.com/wootsbot/open-react-hooks#readme",
@@ -39,6 +39,6 @@
   },
   "gitHead": "18698777ca63cb032f26cbe3b2e7e0c18b1f1e39",
   "dependencies": {
-    "@open-react-hooks/utils": "1.0.1"
+    "@open-react-hooks/utils": "1.0.2"
   }
 }
