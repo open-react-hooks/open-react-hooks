@@ -18,6 +18,9 @@
   "bugs": {
     "url": "https://github.com/wootsbot/open-react-hooks/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "clean:build": "rimraf -rf build",
     "build": "yarn clean:build && yarn build:cjs",
@@ -26,5 +29,6 @@
   },
   "peerDependencies": {
     "react": "17.x"
-  }
+  },
+  "gitHead": "18698777ca63cb032f26cbe3b2e7e0c18b1f1e39"
 }

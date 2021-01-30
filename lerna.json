@@ -5,5 +5,15 @@
   ],
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "version": "independent"
+  "registry": "https://registry.npmjs.org/",
+  "version": "independent",
+  "command": {
+    "version": { "exact": true },
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish",
+      "ignoreChanges": ["**/stories/**", "**/tests/**"],
+      "allowBranch": "main"
+    }
+  }
 }
