@@ -11,6 +11,7 @@
   "files": [
     "build"
   ],
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wootsbot/open-react-hooks.git"
