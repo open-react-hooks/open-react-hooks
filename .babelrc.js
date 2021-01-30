@@ -1,5 +1,5 @@
 const defaultAlias = {
-  '@open-react-hooks/utils': './packages/open-react-hooks-utils',
+  '@open-react-hooks/utils': './packages/open-react-hooks-utils/index.js',
 };
 
 const defaultPlugins = [

@@ -5,8 +5,9 @@
   "author": "Jorge Calleja - wootsbot <jorgelca1205@gmail.com>",
   "homepage": "https://github.com/open-react-hooks/open-react-hooks#readme",
   "license": "MIT",
+  "sideEffects": false,
   "main": "index.js",
-  "private": true,
+  "private": false,
   "publishConfig": {
     "access": "public"
   },
