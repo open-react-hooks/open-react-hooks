@@ -1,6 +1,6 @@
 {
   "name": "@open-react-hooks/use-debounce",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.0",
   "description": "> TODO: description",
   "author": "Jorge Calleja - wootsbot",
   "homepage": "https://github.com/wootsbot/open-react-hooks#readme",
@@ -8,7 +8,7 @@
   "sideEffects": false,
   "main": "build/index.js",
   "module": "build/index.esm.js",
-   "files": [
+  "files": [
     "build"
   ],
   "repository": {
