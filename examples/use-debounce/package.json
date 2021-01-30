@@ -1,6 +1,6 @@
 {
   "name": "example-use-debounce",
-  "version": "1.0.2-alpha.2",
+  "version": "1.0.2-alpha.3",
   "main": "index.js",
   "private": true,
   "license": "MIT",
@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@open-react-hooks/use-debounce": "0.0.3-alpha.1",
+    "@open-react-hooks/use-debounce": "0.0.3-alpha.2",
     "next": "^10.0.6"
   },
   "peerDependencies": {
