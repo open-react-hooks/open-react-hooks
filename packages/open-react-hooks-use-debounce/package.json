@@ -37,5 +37,8 @@
   "peerDependencies": {
     "react": "17.x"
   },
-  "gitHead": "18698777ca63cb032f26cbe3b2e7e0c18b1f1e39"
+  "gitHead": "18698777ca63cb032f26cbe3b2e7e0c18b1f1e39",
+  "dependencies": {
+    "@open-react-hooks/utils": "^1.0.0"
+  }
 }

@@ -15,7 +15,7 @@ export default {
       format: 'esm',
     },
   ],
-  external: ['react'],
+  external: ['react', '@open-react-hooks/utils'],
   plugins: [
     babel({
       babelHelpers: 'bundled',

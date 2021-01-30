@@ -1,8 +1,8 @@
 import { useCallback, useRef, useEffect } from 'react';
 
-import { modeTypes } from './utils';
+import { debounceModeTypes } from '@open-react-hooks/utils';
 
-function useDebounce({ mode, delay } = { mode: modeTypes.MODE_DEFAULT, delay: 1000 }) {
+function useDebounce({ mode, delay } = { mode: debounceModeTypes.MODE_DEFAULT, delay: 1000 }) {
   const handleDebounce = useCallback(
     (callback) => {
       let timer;
@@ -30,7 +30,8 @@ function useDebounce({ mode, delay } = { mode: modeTypes.MODE_DEFAULT, delay: 10
     return debouncedFn.current;
   }
 
-  const debounce = mode === modeTypes.MODE_MEMOIZE ? handleMemoizedDebounce : handleDebounce;
+  const debounce =
+    mode === debounceModeTypes.MODE_MEMOIZE ? handleMemoizedDebounce : handleDebounce;
 
   return {
     debounce,

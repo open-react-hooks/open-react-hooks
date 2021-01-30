@@ -1,4 +1,6 @@
-const defaultAlias = {};
+const defaultAlias = {
+  '@open-react-hooks/utils': './packages/open-react-hooks-utils',
+};
 
 const defaultPlugins = [
   'babel-plugin-transform-react-constant-elements',
