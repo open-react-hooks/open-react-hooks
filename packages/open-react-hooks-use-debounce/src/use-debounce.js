@@ -2,7 +2,7 @@ import { useCallback, useRef, useEffect } from 'react';
 
 import { modeTypes } from './utils';
 
-function useDebounce({ mode = modeTypes.MODE_DEFAULT, delay = 1000 }) {
+function useDebounce({ mode, delay } = { mode: modeTypes.MODE_DEFAULT, delay: 1000 }) {
   const handleDebounce = useCallback(
     (callback) => {
       let timer;

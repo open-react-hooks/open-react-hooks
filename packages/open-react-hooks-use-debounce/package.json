@@ -2,19 +2,13 @@
   "name": "@open-react-hooks/use-debounce",
   "version": "0.0.1",
   "description": "> TODO: description",
-  "author": "Jorge Calleja - wootsbot <jlca@parrotsoftware.io>",
+  "author": "Jorge Calleja - wootsbot",
   "homepage": "https://github.com/wootsbot/open-react-hooks#readme",
   "license": "ISC",
   "sideEffects": false,
   "main": "build/index.js",
   "module": "build/index.esm.js",
-  "exports": {
-    ".": {
-      "require": "./build/index.js",
-      "default": "./build/index.esm.js"
-    }
-  },
-  "files": [
+   "files": [
     "build"
   ],
   "repository": {

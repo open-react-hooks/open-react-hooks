@@ -9,7 +9,8 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
-    "use-debounce": "yarn workspace @open-react-hooks/use-debounce"
+    "use-debounce": "yarn workspace @open-react-hooks/use-debounce",
+    "example-use-debounce": "yarn workspace example-use-debounce"
   },
   "dependencies": {
     "@babel/cli": "^7.12.10",
