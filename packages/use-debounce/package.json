@@ -6,8 +6,6 @@
   "homepage": "https://github.com/wootsbot/open-react-hooks#readme",
   "license": "ISC",
   "sideEffects": false,
-  "main": "build/index.js",
-  "module": "build/index.esm.js",
   "exports": {
     ".": {
       "require": "./build/index.js",
@@ -31,7 +29,7 @@
   "scripts": {
     "clean:build": "rimraf -rf build",
     "build": "yarn clean:build && yarn build:cjs",
-    "build:cjs": "cross-env BABEL_ENV=cjs rollup --config ../../rollup.config.js",
+    "build:cjs": "cross-env BABEL_ENV=cjs rollup --config rollup.config.js",
     "prettier": "prettier --config ../../.prettierrc \"./**/*.+(js|json|jsx)\" --write"
   },
   "peerDependencies": {

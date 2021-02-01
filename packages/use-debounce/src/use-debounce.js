@@ -1,6 +1,6 @@
 import { useCallback, useRef, useEffect } from 'react';
 
-import { debounceModeTypes } from '@open-react-hooks/utils';
+import { debounceModeTypes } from '../../utils';
 
 function useDebounce({ mode, delay } = { mode: debounceModeTypes.MODE_DEFAULT, delay: 1000 }) {
   const handleDebounce = useCallback(

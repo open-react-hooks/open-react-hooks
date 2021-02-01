@@ -1,4 +1,5 @@
 import babel from '@rollup/plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 
 export default {
@@ -21,15 +22,10 @@ export default {
       babelHelpers: 'bundled',
       exclude: 'node_modules/**',
     }),
+    commonjs(),
     terser({
+      module: true,
       output: { comments: false },
-      compress: {
-        keep_infinity: true,
-        pure_getters: true,
-        passes: 10,
-      },
-      ecma: 5,
-      toplevel: process.env.BABEL_ENV === 'cjs',
     }),
   ],
 };
