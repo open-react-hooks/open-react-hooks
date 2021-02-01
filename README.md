@@ -1,7 +1,7 @@
 <div align="center">
     <p align="center">
         <a href="https://github.com/open-react-hooks" title="React Hook Form - Simple React forms validation">
-            <img src="docs/logo.png" alt="React Hook Form Logo - React hook custom hook for form validation" width="300px" />
+            <img src="https://github.com/open-react-hooks/open-react-hooks/blob/main/docs/logo.png" alt="React Hook Form Logo - React hook custom hook for form validation" width="300px" />
         </a>
     </p>
 </div>
