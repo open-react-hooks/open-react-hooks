@@ -1,11 +1,4 @@
-# `hooks-utils-use-debounce`
+# `@open-react-hooks/use-debounce`
 
-> TODO: description
-
-## Usage
-
-```
-const hooksUtilsUseDebounce = require('hooks-utils-use-debounce');
-
-// TODO: DEMONSTRATE API
-```
+Creates a debounced function that delays invoking func until after wait milliseconds have elapsed
+since the last time the debounced function was invoked.
