@@ -6,8 +6,8 @@
   "homepage": "https://github.com/open-react-hooks/open-react-hooks#readme",
   "license": "MIT",
   "sideEffects": false,
-  "main": "src/index.js",
-  "module": "src/index.js",
+  "main": "build/index.js",
+  "module": "build/index.js",
   "files": [
     "build"
   ],
