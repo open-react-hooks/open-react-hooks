@@ -1,8 +1,6 @@
 const { NODE_ENV, BABEL_ENV } = process.env;
 const cjs = NODE_ENV === 'test' || BABEL_ENV === 'commonjs';
 
-const defaultAlias = {};
-
 const defaultPlugins = [
   'babel-plugin-transform-react-constant-elements',
   [
@@ -31,13 +29,6 @@ module.exports = {
     ...defaultPlugins,
     // for IE 11 support
     '@babel/plugin-transform-object-assign',
-    [
-      'babel-plugin-module-resolver',
-      {
-        root: ['./'],
-        alias: defaultAlias,
-      },
-    ],
     [
       '@babel/transform-runtime',
       {

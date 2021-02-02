@@ -7,7 +7,6 @@ import size from 'rollup-plugin-size';
 
 const globals = {
   react: 'React',
-  '@open-react-hooks/utils': 'openReactHooksUtils',
 };
 const extensions = ['.js', '.es6', '.es', '.mjs'];
 const babelOptions = {
@@ -20,9 +19,9 @@ const babelOptions = {
 const resolveConfig = { extensions };
 
 export default {
-  input: 'src/index.js',
+  input: 'index.js',
   output: {
-    name: 'useThrottle',
+    name: 'utils',
     file: 'build/index.js',
     sourcemap: true,
     format: 'umd',

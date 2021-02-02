@@ -7,7 +7,6 @@ import size from 'rollup-plugin-size';
 
 const globals = {
   react: 'React',
-  '@emotion/react': 'EmotionReact',
   '@open-react-hooks/utils': 'openReactHooksUtils',
 };
 const extensions = ['.js', '.es6', '.es', '.mjs'];

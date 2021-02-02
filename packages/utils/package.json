@@ -7,6 +7,10 @@
   "license": "MIT",
   "sideEffects": false,
   "main": "index.js",
+  "module": "index.js",
+  "files": [
+    "build"
+  ],
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -16,7 +20,10 @@
     "url": "git+https://github.com/open-react-hooks/open-react-hooks.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "clean:build": "rimraf -rf build",
+    "build": "yarn clean:build && yarn build:umd",
+    "build:umd": "cross-env BABEL_ENV=umd rollup --config rollup.config.js",
+    "prettier": "prettier --config ../../.prettierrc \"./**/*.+(js|json|jsx)\" --write"
   },
   "bugs": {
     "url": "https://github.com/open-react-hooks/open-react-hooks/issues"
