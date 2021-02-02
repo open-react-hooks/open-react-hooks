@@ -5,3 +5,7 @@ export const debounceModeTypes = {
   MODE_MEMOIZE,
   MODE_DEFAULT,
 };
+
+export const throttleModeTypes = {
+  ...debounceModeTypes,
+};

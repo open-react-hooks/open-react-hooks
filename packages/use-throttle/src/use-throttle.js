@@ -1,8 +1,8 @@
 import { useCallback, useRef, useEffect } from 'react';
 
-import { debounceModeTypes } from '@open-react-hooks/utils';
+import { throttleModeTypes } from '@open-react-hooks/utils';
 
-function useThrottle({ mode, delay } = { mode: debounceModeTypes.MODE_DEFAULT, delay: 1000 }) {
+function useThrottle({ mode, delay } = { mode: throttleModeTypes.MODE_DEFAULT, delay: 1000 }) {
   const handleThrottle = useCallback(
     (callback) => {
       let timer;
@@ -35,7 +35,7 @@ function useThrottle({ mode, delay } = { mode: debounceModeTypes.MODE_DEFAULT, d
   }
 
   const throttle =
-    mode === debounceModeTypes.MODE_MEMOIZE ? handleMemoizedThrottle : handleThrottle;
+    mode === throttleModeTypes.MODE_MEMOIZE ? handleMemoizedThrottle : handleThrottle;
 
   return {
     throttle,
