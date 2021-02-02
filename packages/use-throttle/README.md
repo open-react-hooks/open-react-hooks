@@ -1,11 +1,5 @@
 # `@open-react-hooks/use-throttle`
 
-> TODO: description
-
-## Usage
-
-```
-const useThrottle = require('@open-react-hooks/use-throttle');
-
-// TODO: DEMONSTRATE API
-```
+Creates a throttled function that only invokes func at most once per every wait milliseconds. The
+throttled function comes with a cancel method to cancel delayed func invocations and a flush method
+to immediately invoke them.
