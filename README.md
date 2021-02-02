@@ -6,7 +6,7 @@
     </p>
 </div>
 
-<p align="center">One place and large hooks for your react applications
+<p align="center">A place of powerful hooks for your react applications.
 </p>
 
 <div align="center">
