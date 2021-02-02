@@ -4,13 +4,14 @@
   "workspaces": {
     "packages": [
       "packages/*",
-      "examples/*"
+      "docs/*"
     ]
   },
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "use-debounce": "yarn workspace @open-react-hooks/use-debounce",
-    "example-use-debounce": "yarn workspace example-use-debounce"
+    "use-throttle": "yarn workspace @open-react-hooks/use-throttle",
+    "docs": "yarn workspace @open-react-hooks/docs"
   },
   "dependencies": {
     "@babel/cli": "^7.12.10",

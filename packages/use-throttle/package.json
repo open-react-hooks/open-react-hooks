@@ -1,0 +1,37 @@
+{
+  "name": "@open-react-hooks/use-throttle",
+  "version": "0.0.1",
+  "description": "Creates a throttled function that only invokes func at most once per every wait milliseconds. The throttled function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.",
+  "author": "Jorge Calleja - wootsbot <jorgelca1205@gmail.com>",
+  "homepage": "https://github.com/open-react-hooks/open-react-hooks#readme",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "build/index.js",
+  "module": "build/index.esm.js",
+  "files": [
+    "build"
+  ],
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/open-react-hooks/open-react-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/open-react-hooks/open-react-hooks/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "clean:build": "rimraf -rf build",
+    "build": "yarn clean:build && yarn build:cjs",
+    "build:cjs": "cross-env BABEL_ENV=cjs rollup --config rollup.config.js",
+    "prettier": "prettier --config ../../.prettierrc \"./**/*.+(js|json|jsx)\" --write"
+  },
+  "peerDependencies": {
+    "react": "17.x"
+  },
+  "dependencies": {
+    "@open-react-hooks/utils": "1.0.2"
+  }
+}

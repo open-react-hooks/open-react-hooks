@@ -1,9 +1,11 @@
 import React from 'react';
 
 import { useDebounce } from '@open-react-hooks/use-debounce';
+import { useThrottle } from '@open-react-hooks/use-throttle';
 
 function HomePage() {
   const { debounce } = useDebounce({ delay: 500 });
+  const { throttle } = useThrottle({ mode: 'memoize', delay: 500 });
 
   function handleClick() {
     console.log('handleClick');
@@ -11,10 +13,8 @@ function HomePage() {
 
   return (
     <div>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt inventore quaerat soluta
-      nulla in nisi, ullam assumenda minima cupiditate, laudantium eum itaque voluptatem autem
-      consectetur eius magnam voluptatum, cumque dolore.
       <button onClick={debounce(handleClick)}>button</button>
+      <button onClick={throttle(handleClick)}>button</button>
     </div>
   );
 }
