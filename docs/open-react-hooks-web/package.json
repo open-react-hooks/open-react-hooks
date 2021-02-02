@@ -1,6 +1,6 @@
 {
   "name": "@open-react-hooks/docs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index.js",
   "private": true,
   "license": "MIT",
@@ -10,8 +10,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@open-react-hooks/use-debounce": "^0.0.4",
-    "@open-react-hooks/use-throttle": "0.0.4",
+    "@open-react-hooks/use-debounce": "0.0.5",
+    "@open-react-hooks/use-throttle": "0.0.5",
     "next": "^10.0.6"
   },
   "peerDependencies": {

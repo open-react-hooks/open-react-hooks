@@ -1,6 +1,6 @@
 {
   "name": "@open-react-hooks/use-throttle",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Creates a throttled function that only invokes func at most once per every wait milliseconds. The throttled function comes with a cancel method to cancel delayed func invocations and a flush method to immediately invoke them.",
   "author": "Jorge Calleja - wootsbot <jorgelca1205@gmail.com>",
   "homepage": "https://github.com/open-react-hooks/open-react-hooks#readme",
@@ -32,6 +32,6 @@
     "react": "17.x"
   },
   "dependencies": {
-    "@open-react-hooks/utils": "1.0.5"
+    "@open-react-hooks/utils": "1.0.6"
   }
 }
