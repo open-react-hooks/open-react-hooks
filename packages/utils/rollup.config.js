@@ -15,23 +15,26 @@ const babelOptions = {
   babelHelpers: 'runtime',
   configFile: '../../.babelrc.js',
 };
+const commonjsOptions = {
+  ignoreGlobal: true,
+  include: /node_modules/,
+};
 
 const resolveConfig = { extensions };
 
 export default {
-  input: 'index.js',
+  input: 'src/index.js',
   output: {
     name: 'utils',
     file: 'build/index.js',
-    sourcemap: true,
-    format: 'umd',
+    format: 'cjs',
     globals,
   },
   external: Object.keys(globals),
   plugins: [
     resolve(resolveConfig),
     babel(babelOptions),
-    commonjs(),
+    commonjs(commonjsOptions),
     externalDeps(),
     terser(),
     size(),

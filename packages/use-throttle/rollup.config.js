@@ -24,8 +24,7 @@ export default {
   output: {
     name: 'useThrottle',
     file: 'build/index.js',
-    sourcemap: true,
-    format: 'umd',
+    format: 'cjs',
     globals,
   },
   external: Object.keys(globals),

@@ -10,7 +10,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@open-react-hooks/use-debounce": "0.0.3-alpha.8",
+    "@open-react-hooks/use-debounce": "^0.0.4",
     "@open-react-hooks/use-throttle": "0.0.4",
     "next": "^10.0.6"
   },
