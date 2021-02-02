@@ -1,6 +1,7 @@
-const defaultAlias = {
-  '@open-react-hooks/utils': './packages/open-react-hooks-utils/index.js',
-};
+const { NODE_ENV, BABEL_ENV } = process.env;
+const cjs = NODE_ENV === 'test' || BABEL_ENV === 'commonjs';
+
+const defaultAlias = {};
 
 const defaultPlugins = [
   'babel-plugin-transform-react-constant-elements',
@@ -14,33 +15,15 @@ const defaultPlugins = [
   '@babel/plugin-proposal-nullish-coalescing-operator',
 ];
 
-let defaultPresets = [
+const defaultPresets = [
   [
     '@babel/env',
     {
-      bugfixes: true,
-      modules: ['cjs'].includes(process.env.BABEL_ENV) ? false : 'commonjs',
+      loose: true,
+      modules: false,
     },
   ],
 ];
-
-if (process.env.BABEL_ENV === 'esm') {
-  defaultPresets = [
-    [
-      '@babel/env',
-      {
-        loose: true,
-        bugfixes: true,
-        shippedProposals: true,
-        modules: false,
-        modules: false,
-        targets: {
-          ie: 9,
-        },
-      },
-    ],
-  ];
-}
 
 module.exports = {
   presets: defaultPresets.concat(['@babel/react']),
@@ -55,47 +38,14 @@ module.exports = {
         alias: defaultAlias,
       },
     ],
+    [
+      '@babel/transform-runtime',
+      {
+        useESModules: !cjs,
+        version: require('./package.json').dependencies['@babel/runtime'].replace(/^[^0-9]*/, ''),
+      },
+    ],
   ],
+
   ignore: [/@babel[\\|/]runtime/], // Fix a Windows issue.
-  env: {
-    cjs: {
-      plugins: [
-        ...defaultPlugins,
-        'babel-plugin-macros',
-        ['@babel/plugin-transform-runtime', { useESModules: true }],
-      ],
-    },
-    esm: {
-      presets: defaultPresets,
-      plugins: [
-        ...defaultPlugins,
-        'babel-plugin-macros',
-        ['@babel/plugin-transform-runtime', { useESModules: false }],
-      ],
-    },
-    development: {
-      plugins: [
-        [
-          'babel-plugin-module-resolver',
-          {
-            root: ['./'],
-            alias: defaultAlias,
-          },
-        ],
-      ],
-    },
-    test: {
-      sourceMaps: 'both',
-      plugins: [
-        ...defaultPlugins,
-        [
-          'babel-plugin-module-resolver',
-          {
-            root: ['./'],
-            alias: defaultAlias,
-          },
-        ],
-      ],
-    },
-  },
 };

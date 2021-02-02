@@ -7,7 +7,7 @@
   "license": "MIT",
   "sideEffects": false,
   "main": "build/index.js",
-  "module": "build/index.esm.js",
+  "module": "build/index.js",
   "files": [
     "build"
   ],
@@ -24,8 +24,8 @@
   },
   "scripts": {
     "clean:build": "rimraf -rf build",
-    "build": "yarn clean:build && yarn build:cjs",
-    "build:cjs": "cross-env BABEL_ENV=cjs rollup --config rollup.config.js",
+    "build": "yarn clean:build && yarn build:umd",
+    "build:umd": "cross-env BABEL_ENV=umd rollup --config rollup.config.js",
     "prettier": "prettier --config ../../.prettierrc \"./**/*.+(js|json|jsx)\" --write"
   },
   "peerDependencies": {
