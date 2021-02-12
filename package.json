@@ -10,8 +10,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap --use-workspaces",
     "release": "lerna exec -- build",
-    "use-debounce": "yarn workspace @open-react-hooks/use-debounce",
-    "use-throttle": "yarn workspace @open-react-hooks/use-throttle",
+    "useDebounce": "yarn workspace @open-react-hooks/use-debounce",
+    "useThrottle": "yarn workspace @open-react-hooks/use-throttle",
+    "useCurrentSizePage": "yarn workspace @open-react-hooks/use-current-size-page",
     "utils": "yarn workspace @open-react-hooks/utils",
     "docs": "yarn workspace @open-react-hooks/docs"
   },
