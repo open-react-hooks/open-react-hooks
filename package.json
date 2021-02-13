@@ -13,6 +13,7 @@
     "useDebounce": "yarn workspace @open-react-hooks/use-debounce",
     "useThrottle": "yarn workspace @open-react-hooks/use-throttle",
     "useCurrentSizePage": "yarn workspace @open-react-hooks/use-current-size-page",
+    "useFileSaver": "yarn workspace @open-react-hooks/use-file-saver",
     "utils": "yarn workspace @open-react-hooks/utils",
     "docs": "yarn workspace @open-react-hooks/docs"
   },

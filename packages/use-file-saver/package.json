@@ -1,7 +1,10 @@
 {
-  "name": "@open-react-hooks/use-current-size-page",
-  "version": "1.0.1",
-  "description": "> TODO: description",
+  "name": "@open-react-hooks/use-file-saver",
+  "version": "1.0.0",
+  "description": "useFileSaver",
+  "keywords": [
+    "useFileSaver"
+  ],
   "author": "Jorge Calleja - wootsbot <jorgelca1205@gmail.com>",
   "homepage": "https://github.com/open-react-hooks/open-react-hooks#readme",
   "license": "MIT",
@@ -19,19 +22,19 @@
     "type": "git",
     "url": "git+https://github.com/open-react-hooks/open-react-hooks.git"
   },
+  "bugs": {
+    "url": "https://github.com/open-react-hooks/open-react-hooks/issues"
+  },
   "scripts": {
     "clean:build": "rimraf -rf build",
     "build": "yarn clean:build && yarn build:cjs",
     "build:cjs": "cross-env BABEL_ENV=cjs rollup --config rollup.config.js",
     "prettier": "prettier --config ../../.prettierrc \"./**/*.+(js|json|jsx)\" --write"
   },
-  "bugs": {
-    "url": "https://github.com/open-react-hooks/open-react-hooks/issues"
-  },
   "peerDependencies": {
     "react": "17.x"
   },
   "dependencies": {
-    "@open-react-hooks/use-debounce": "^0.0.6"
+    "file-saver": "^2.0.5"
   }
 }
