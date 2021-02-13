@@ -29,6 +29,8 @@
     "clean:build": "rimraf -rf build",
     "build": "yarn clean:build && yarn build:cjs",
     "build:cjs": "cross-env BABEL_ENV=cjs rollup --config rollup.config.js",
+    "lint": "eslint src --ext .js --config ../../.eslintrc",
+    "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier --config ../../.prettierrc \"./**/*.+(js|json|jsx)\" --write"
   },
   "peerDependencies": {

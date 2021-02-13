@@ -1,0 +1,54 @@
+
+{
+  "extends": ["plugin:prettier/recommended", "eslint:recommended", "plugin:react/recommended"],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "plugins": ["react-hooks","prettier", "react"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "jsxSingleQuote": false,
+        "printWidth": 100,
+        "proseWrap": "always",
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "all",
+        "endOfLine": "lf"
+      }
+    ],
+    "no-unused-vars": [
+      2,
+      {
+        "vars": "all",
+        "args": "after-used"
+      }
+    ],
+    "no-console": 1,
+    "no-unexpected-multiline": "error",
+    "react/destructuring-assignment": ["error", "always"],
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope": 0
+  }
+}
