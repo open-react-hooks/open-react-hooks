@@ -1,6 +1,6 @@
 {
   "name": "@open-react-hooks/use-current-size-page",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "> TODO: description",
   "author": "Jorge Calleja - wootsbot <jorgelca1205@gmail.com>",
   "homepage": "https://github.com/open-react-hooks/open-react-hooks#readme",
@@ -34,6 +34,6 @@
     "react": "17.x"
   },
   "dependencies": {
-    "@open-react-hooks/use-debounce": "^0.0.6"
+    "@open-react-hooks/use-debounce": "0.0.7"
   }
 }

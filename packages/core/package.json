@@ -1,6 +1,6 @@
 {
   "name": "@open-react-hooks/core",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Jorge Calleja - wootsbot <jorgelca1205@gmail.com>",
   "homepage": "https://github.com/open-react-hooks/open-react-hooks#readme",
@@ -35,10 +35,10 @@
     "react": "17.x"
   },
   "dependencies": {
-    "@open-react-hooks/use-current-size-page": "^1.0.2",
-    "@open-react-hooks/use-debounce": "^0.0.6",
-    "@open-react-hooks/use-file-saver": "^1.0.1",
-    "@open-react-hooks/use-throttle": "^0.0.6",
-    "@open-react-hooks/utils": "^1.0.7"
+    "@open-react-hooks/use-current-size-page": "1.0.3",
+    "@open-react-hooks/use-debounce": "0.0.7",
+    "@open-react-hooks/use-file-saver": "1.0.2",
+    "@open-react-hooks/use-throttle": "0.0.7",
+    "@open-react-hooks/utils": "1.0.8"
   }
 }
