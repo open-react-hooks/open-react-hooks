@@ -26,10 +26,6 @@ import { useCurrentSizePage } from '@open-react-hooks/core';
 function App() {
   const [pageHeight] = useCurrentSizePage(); // initialize the hook
 
-  const onSubmit = (data) => {
-    console.log(data);
-  };
-
   return (
     <div>
       <span>Current size page: {pageHeight} </span>
